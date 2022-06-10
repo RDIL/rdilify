@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "allowJs": false,
+        "checkJs": true,
+        "moduleResolution": "node"
+    },
+    "include": ["lib/*", "lib/tasks/*", "scripts/*"],
+    "exclude": ["rdilify.mjs"]
+}
