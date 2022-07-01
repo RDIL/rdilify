@@ -14,12 +14,11 @@ const { metafile } = await build({
     minifySyntax: !noMinify,
     minifyIdentifiers: !keepNames,
     format: "esm",
-    sourcemap: "inline",
     banner: {
         js: [
             `import { createRequire } from "module"`,
-            `const require = createRequire(import.meta.url)`
-        ].join('\n')
+            `const require = createRequire(import.meta.url)`,
+        ].join("\n"),
     },
     loader: {
         ".editorconfig": "text",
